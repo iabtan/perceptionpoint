@@ -1,5 +1,6 @@
-trigger ContentDocumentLinkTrigger on ContentDocumentLink (before insert) {
-    for(ContentDocumentLink cdl :trigger.new){
+trigger ContentDocumentLinkTrigger on ContentDocumentLink (after insert) {
+    //ContentDocumentLinkHandler.createScannedItem(trigger.new);
+    //for(ContentDocumentLink cdl :trigger.new){
         //cdl.addError('error');
-    }
+    //}
 }
